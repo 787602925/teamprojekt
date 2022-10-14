@@ -1,0 +1,30 @@
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+.instructions {
+    width: 80%;
+}
+#instructions_info {
+    line-height: 3vh;
+    padding: 1vh 0;
+    display: none;
+}
+.instructions_title {
+    line-height: 5vh;
+}
+.instructions_title span {
+    cursor: pointer;
+}
+.task {
+    background-color: blanchedalmond;
+}
+
+.task a {
+    line-height: 5vh;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(118,122,125);
+}
+
+

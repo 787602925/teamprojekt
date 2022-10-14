@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>homepage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/common.css" type="text/css" rel="stylesheet">
+  <link href="css/top.css" type="text/css" rel="stylesheet">
+  <link href="css/input_field.css" type="text/css" rel="stylesheet">
+  <link href="css/table.css" type="text/css" rel="stylesheet">
+  <link href="css/diagram.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="top">
+  <div class="instructions" >
+    <div class="instructions_title"><span onclick="instruction()">instructions for use</span></div>
+    <div id="instructions_info">Operator precedence is not automatically provided (brackets are needed).
+      For negation enter !,   for OR: ||,   for AND: &&,  for conditional: =>,   for biconditional: <==>
+      for 0 enter: x && !x,   for 1 enter: x || !x</div>
+  </div>
+  <div class="task">
+    <a href="#">task text</a>
+  </div>
+</div>
+<div class="input_field">
+  <div class="input">
+    <label for="input">
+      <input type="text" id="input" value="input"/>
+    </label>
+    <div class="star"><i id="star" class="fa fa-star" onclick="mark()"></i></div>
+  </div>
+  <div class="notification" id="notification">
+    <span>The character " " you entered is not legal</span>
+  </div>
+</div>
+<div class="table">
+  <div class="table_text"><span>Table</span></div>
+  <div class="table_table">
+    <table border="1">
+      <tr>
+        <th>A</th>
+        <th>B</th>
+        <th>A∧B</th>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>**PLACEHOLDER**</td>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>**PLACEHOLDER**</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>**PLACEHOLDER**</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>**PLACEHOLDER**</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="diagram">
+  <div class="diagram_text"><span onclick="showDiagram()">venn-diagram</span></div>
+  <div class="diagram_diagram" id="diagram">
+    <div class="img">
+      <img src="img/venn-diagram.png"  alt="diagram"/>
+    </div>
+  </div>
+</div>
+<script>
+  function instruction(){
+      let i = document.getElementById("instructions_info")
+      if (i.style.display === "none") i.style.display = "inherit"
+      else i.style.display = "none"
+  }
+  function mark(){
+      let s = document.getElementById("star")
+      if (s.style.color === "yellow") s.style.color = "#d9d9d9"
+      else s.style.color = "yellow"
+  }
+  function showDiagram(){
+      let d = document.getElementById("diagram")
+      if (d.style.display === "none") d.style.display = "inherit"
+      else d.style.display = "none"
+  }
+  // Listening to "enter" events
+  document.onkeydown = function (event) {
+      let e = event || window.event;
+      let i = document.getElementById("input")
+      let n = document.getElementById("notification")
+      if (e && e.keyCode === 13) {
+          if(isValid(i.value)) {
+              n.style.display = "none"
+          }
+          else {
+              n.style.display = "block"
+
+          }
+
+      }
+  }
+  // This function is used to determine if the input expression is legal
+  function isValid(i){
+      if (i === "ddd") return true
+      else return false
+  }
+</script>
+</body>
+</html>

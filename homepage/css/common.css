@@ -1,0 +1,26 @@
+body {
+    margin: 0 8vw 0 8vw;
+    padding: 0;
+    background-color: rgb(237,245,250);
+    color: rgb(118,122,125);
+}
+a {
+    text-decoration: none;
+}
+.input_field {
+    /*background-color: #bfa;*/
+    margin-top: 5vh;
+    height: 13vh;
+}
+.table {
+    /*background-color: #58c;*/
+    margin-top: 3vh;
+}
+.diagram {
+    /*background-color: orange;*/
+    margin-top: 3vh;
+}
+.top {
+    /*background-color: red;*/
+
+}

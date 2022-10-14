@@ -1,0 +1,27 @@
+.diagram {
+    display: flex;
+    flex-direction: column;
+
+}
+.diagram_text {
+    height: 3vh;
+    text-align: center;
+    padding: 1vh 0;
+}
+.diagram_text span {
+    cursor: pointer;
+    color: blue;
+    font-style: italic;
+}
+.diagram_diagram {
+    background-color: #fff;
+    box-shadow: 2px 2px 5px #aaa;
+    display: none;
+}
+.img {
+    width: 50%;
+    margin: auto;
+}
+.diagram_diagram img {
+    width: 100%;
+}
