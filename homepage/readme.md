@@ -7,6 +7,3 @@ Anweisungen:
     * **unzulässige Zeichen: alle anderen Zeichen**
 2. Sobald der Benutzer auf "instructions for use" geklickt hat, erscheint der Hinweis. Der Hinweis verschwindet, wenn der Benutzer noch mal klickt.
 3. Sobald der Benutzer auf "show venn-diagram" (es erscheint, nur wenn die Eingabe gültig ist.) geklickt hat, erscheint das Diagramm. Das Diagramm verschwindet, wenn der Benutzer noch mal klickt.
-
-Vorhandene Bugs:
-Wenn die Seite zum ersten Mal geöffnet wird, müssen sowohl "intruction for use" als auch "show venn-diagramm" zweimal angeklickt werden, um angezeigt zu werden.

@@ -64,7 +64,7 @@
   </div>
 </div>
 <div class="diagram" id="diagram_root">
-  <div class="diagram_text"><span onclick="showDiagram()">show venn-diagram</span></div>
+  <div class="diagram_text"><span onclick="showDiagram()" id="diagram_text">show venn-diagram</span></div>
   <div class="diagram_diagram" id="diagram">
     <div class="img">
       <img src="img/venn-diagram.png"  alt="diagram"/>
@@ -74,8 +74,9 @@
 <script>
   function instruction(){
       let i = document.getElementById("instructions_info")
-      if (i.style.display !== "none") i.style.display = "none"
-      else i.style.display = "inherit"
+      if (i.style.display === "") i.style.display = "none";
+      if (i.style.display === "none") i.style.display = "inherit"
+      else i.style.display = "none"
   }
   function mark(){
       let s = document.getElementById("star")
@@ -84,8 +85,16 @@
   }
   function showDiagram(){
       let d = document.getElementById("diagram")
-      if (d.style.display !== "none") d.style.display = "none"
-      else d.style.display = "inherit"
+      let dt = document.getElementById("diagram_text")
+      if (d.style.display === "") d.style.display = "none";
+      if (d.style.display === "none") {
+          d.style.display = "inherit"
+          dt.innerHTML = "hide venn-diagram"
+      }
+      else {
+          d.style.display = "none"
+          dt.innerHTML = "show venn-diagram"
+      }
   }
   // Listening to "enter" events
   document.onkeydown = function (event) {
@@ -94,11 +103,13 @@
       let n = document.getElementById("notification")
       let t = document.getElementById("table")
       let d = document.getElementById("diagram_root")
+      let dt = document.getElementById("diagram_text")
       if (e && e.keyCode === 13) {
           if(isValid(i.value)) {
               n.style.display = "none"
               t.style.display = "flex"
               d.style.display = "flex"
+              dt.innerHTML = "show venn-diagram"
           }
           else {
               n.style.display = "block"
@@ -109,8 +120,7 @@
   }
   // This function is used to determine if the input expression is legal
   function isValid(i){
-      if (i === "ddd") return true
-      else return false
+      return i === "ddd";
   }
 </script>
 </body>
