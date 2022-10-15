@@ -14,17 +14,22 @@
     line-height: 5vh;
 }
 .instructions_title span {
+    font-style: italic;
+}
+.instructions_title span {
     cursor: pointer;
 }
-.task {
-    background-color: blanchedalmond;
-}
+
 
 .task a {
     line-height: 5vh;
     font-size: large;
     font-weight: bold;
-    color: rgb(118,122,125);
+    font-style: italic;
+    text-decoration: underline;
+    /*color: rgb(118,122,125);*/
+    color: blue;
 }
+
 
 

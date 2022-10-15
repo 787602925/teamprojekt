@@ -1,7 +1,6 @@
 .diagram {
-    display: flex;
+    display: none;
     flex-direction: column;
-
 }
 .diagram_text {
     height: 3vh;

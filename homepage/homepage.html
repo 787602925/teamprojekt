@@ -24,16 +24,14 @@
 </div>
 <div class="input_field">
   <div class="input">
-    <label for="input">
-      <input type="text" id="input" value="input"/>
-    </label>
+    <input type="text" id="input" value="input" onfocus="this.select()" onmouseover="this.focus()"/>
     <div class="star"><i id="star" class="fa fa-star" onclick="mark()"></i></div>
   </div>
   <div class="notification" id="notification">
     <span>The character " " you entered is not legal</span>
   </div>
 </div>
-<div class="table">
+<div class="table" id="table">
   <div class="table_text"><span>Table</span></div>
   <div class="table_table">
     <table border="1">
@@ -65,8 +63,8 @@
     </table>
   </div>
 </div>
-<div class="diagram">
-  <div class="diagram_text"><span onclick="showDiagram()">venn-diagram</span></div>
+<div class="diagram" id="diagram_root">
+  <div class="diagram_text"><span onclick="showDiagram()">show venn-diagram</span></div>
   <div class="diagram_diagram" id="diagram">
     <div class="img">
       <img src="img/venn-diagram.png"  alt="diagram"/>
@@ -76,8 +74,8 @@
 <script>
   function instruction(){
       let i = document.getElementById("instructions_info")
-      if (i.style.display === "none") i.style.display = "inherit"
-      else i.style.display = "none"
+      if (i.style.display !== "none") i.style.display = "none"
+      else i.style.display = "inherit"
   }
   function mark(){
       let s = document.getElementById("star")
@@ -86,23 +84,27 @@
   }
   function showDiagram(){
       let d = document.getElementById("diagram")
-      if (d.style.display === "none") d.style.display = "inherit"
-      else d.style.display = "none"
+      if (d.style.display !== "none") d.style.display = "none"
+      else d.style.display = "inherit"
   }
   // Listening to "enter" events
   document.onkeydown = function (event) {
       let e = event || window.event;
       let i = document.getElementById("input")
       let n = document.getElementById("notification")
+      let t = document.getElementById("table")
+      let d = document.getElementById("diagram_root")
       if (e && e.keyCode === 13) {
           if(isValid(i.value)) {
               n.style.display = "none"
+              t.style.display = "flex"
+              d.style.display = "flex"
           }
           else {
               n.style.display = "block"
-
+              t.style.display = "none"
+              d.style.display = "none"
           }
-
       }
   }
   // This function is used to determine if the input expression is legal

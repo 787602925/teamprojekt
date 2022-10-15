@@ -1,5 +1,5 @@
 .table {
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 .table_text {

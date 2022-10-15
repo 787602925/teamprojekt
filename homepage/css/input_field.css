@@ -17,6 +17,7 @@
     line-height: 4vh;
     background-color: #999;
     border: 0;
+    width: 100%;
 }
 #star {
     font-size:3vh;
