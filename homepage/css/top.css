@@ -25,10 +25,9 @@
     line-height: 5vh;
     font-size: large;
     font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
-    /*color: rgb(118,122,125);*/
-    color: blue;
+    /*font-style: italic;*/
+    /*text-decoration: underline;*/
+    color: rgb(118,122,125);
 }
 
 
