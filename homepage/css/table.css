@@ -1,0 +1,17 @@
+.table {
+    display: none;
+    flex-direction: column;
+}
+.table_text {
+    height: 3vh;
+    text-align: center;
+    padding: 1vh 0;
+}
+.table_table {
+    background-color: #fff;
+    box-shadow: 2px 2px 5px #aaa;
+}
+table {
+    border-collapse: collapse;
+    margin: 3vh auto 3vh auto;
+}
