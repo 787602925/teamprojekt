@@ -1,0 +1,125 @@
+* {
+    background-color: #EDF5FA;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page {
+    width: 900px;
+    letter-spacing: 29%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#task_text {
+    margin: 40px 0 20px 0;
+    letter-spacing: .3rem;
+    font-size: 150%;
+}
+
+#taskfeld {
+    width: 705px;
+    height: 181px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+}
+
+input[type='text'] {
+    display: block;
+    font-size: 120%;
+    width: 300px;
+    padding: 20px 60px;
+    margin: 20px auto 30px auto;
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #CBCBCB;
+}
+
+input[type="text"]:focus,
+input[type="text"]:hover {
+    background-color: #d0e2f0;
+    border: 1px solid #999999;
+}
+
+.task_control {
+    /* padding: 5px 25px;
+    margin: 0 10px 20px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 120%;
+    background-color: #999999; */
+    border: 1px solid #006633;
+    background-color: #009966;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px 25px;
+    margin: 0 10px 20px 10px;
+    font-size: 120%;
+
+}
+
+.task_control:hover {
+    /* background-color: blueviolet;
+    cursor: pointer; */
+    border: 1px solid #006633;
+    background-color: #00CC33;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+
+
+
+#notification {
+    color: #EF5DA8;
+    font-size: 120%;
+    border: 1px solid #eeeeee;
+    background-color: inherit;
+    width: 300px;
+    padding: 20px 60px;
+    margin: 10px auto 30px auto;
+    border: #EDF5FA;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+#note {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 120%;
+ 
+}
+
+#note_close {
+    margin: 20px auto;
+
+}
+
+textarea {
+    width: 705px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 20px auto;
+    border: 1px solid #999999;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+textarea:focus,
+textarea:hover {
+    background-color: #d0e2f0;
+    border: 1px solid #999999;
+}
