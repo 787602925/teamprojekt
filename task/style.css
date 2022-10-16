@@ -13,6 +13,12 @@
     text-align: center;
 }
 
+#return {
+    color: rgb(118,122,125);
+    font-style: italic;
+    margin: 2vh 3vw;
+}
+
 #task_text {
     margin: 40px 0 20px 0;
     letter-spacing: .3rem;

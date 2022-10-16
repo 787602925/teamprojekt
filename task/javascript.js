@@ -1,6 +1,6 @@
 
 
-var el = document.getElementsByTagName('a')[0];
+var el = document.getElementsByTagName('a')[1];
 
 
 function extend(e){
