@@ -1,6 +1,6 @@
 # Überblick der Hauptseite
 Anweisungen:
-1. Wenn die Maus über das Eingabefeld fährt, wird automatisch "Eingabe" im Eingabefeld ausgewählt. Der Benutzer kann einen logischen Ausdruck eingeben. Der Benutzer drückt zur Bestätigung die Eingabetaste.
+1. Wenn die Maus über das Eingabefeld fährt, wird automatisch "Eingabe" im Eingabefeld ausgewählt. Der Benutzer kann einen logischen Ausdruck eingeben. Der Benutzer drückt zur Bestätigung die **Eingabetaste**.
    Wenn das eingegebene Zeichen nicht zulässig ist, wird eine Meldung angezeigt, wenn das eingegebene Zeichen zulässig ist, wird eine Tabelle erstellt.
    Derzeit habe ich den Test so eingestellt:
     * **zulässige Zeichen: "ddd"**
